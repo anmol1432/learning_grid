@@ -1,0 +1,19 @@
+* {
+  margin: 5px;
+  padding: 0;
+}
+.main{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: minmax(100px,auto);
+  grid-gap: 1em;
+}
+
+
+.main>div{
+  background-color: grey;
+  padding: 1em;align-self: flex-start;
+}
+.main>div:nth-child(odd){ 
+ align-self: flex-end;
+  background-color: rgb(203, 209, 203);}
